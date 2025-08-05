@@ -580,3 +580,28 @@ body {
 .wedding-detail-card:hover {
   transform: translateY(-5px);
 }
+
+.btn,
+.btn-primary,
+.event-card .btn,
+.hero-cta .btn {
+  background: var(--accent-pink) !important;
+  color: var(--primary-accent) !important;
+  border: 2px solid var(--accent-pink) !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.event-card .btn:hover,
+.hero-cta .btn:hover {
+  background: var(--primary-accent) !important;
+  color: var(--accent-pink) !important;
+  border-color: var(--primary-accent) !important;
+  transform: translateY(-2px);
+}
