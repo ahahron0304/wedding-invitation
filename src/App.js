@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import HeroSection from './components/HeroSection';
+import CountdownTimer from './components/CountdownTimer';
+import CoupleSection from './components/CoupleSection';
+import StorySection from './components/StorySection';
+import EventsSection from './components/EventsSection';
+import GallerySection from './components/GallerySection';
+import RSVPSection from './components/RSVPSection';
+import Footer from './components/Footer';
+import configData from './config.json';
 
-function App() {
+const App = () => {
+  const [config, setConfig] = useState(null);
+
+  useEffect(() => {
+    setConfig(configData);
+  }, []);
+
+  if (!config) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wedding-app">
+      <HeroSection config={config} />
+      <CountdownTimer config={config} />
+      <CoupleSection config={config} />
+      <StorySection config={config} />
+      <EventsSection config={config} />
+      <GallerySection config={config} />
+      <RSVPSection config={config} />
+      <Footer config={config} />
     </div>
   );
-}
+};
 
 export default App;
