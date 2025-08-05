@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import HeroSection from './components/HeroSection';
 import CountdownTimer from './components/CountdownTimer';
-import CoupleSection from './components/CoupleSection';
+import WeddingDetailsSection from './components/WeddingDetailsSection';
 import StorySection from './components/StorySection';
 import EventsSection from './components/EventsSection';
 import GallerySection from './components/GallerySection';
@@ -24,7 +24,7 @@ const App = () => {
     <div className="wedding-app">
       <HeroSection config={config} />
       <CountdownTimer config={config} />
-      <CoupleSection config={config} />
+      <WeddingDetailsSection config={config} />
       <StorySection config={config} />
       <EventsSection config={config} />
       <GallerySection config={config} />

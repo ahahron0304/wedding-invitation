@@ -13,12 +13,16 @@ const EventsSection = ({ config }) => {
             </div>
             <div className="row">
               {config.events.events.map((event, index) => (
-                <div key={index} className="col-lg-4 col-md-6 col-12 mb-4">
+                <div key={index} className="col-lg-6 col-md-6 col-12 mb-4">
                   <div className="event-card">
                     <div className="event-header">
                       <h4 className="event-title">{event.title}</h4>
                     </div>
                     <div className="event-body">
+                      <div className="event-date">
+                        <i className="fas fa-calendar-alt me-2"></i>
+                        {event.date}
+                      </div>
                       <div className="event-time">
                         <i className="fas fa-clock me-2"></i>
                         {event.time}
@@ -27,10 +31,6 @@ const EventsSection = ({ config }) => {
                         <i className="fas fa-map-marker-alt me-2"></i>
                         {event.location}
                       </div>
-                      <div className="event-description mt-3">
-                        {event.description}
-                      </div>
-                      {/* Only show map for the ceremony */}
                       {event.mapEmbedUrl && (
                         <div className="event-map my-3">
                           <iframe
@@ -45,19 +45,15 @@ const EventsSection = ({ config }) => {
                           ></iframe>
                         </div>
                       )}
-                      {event.mapEmbedUrl ? (
+                      {event.mapEmbedUrl && (
                         <a
-                          href="https://goo.gl/maps/6Qw1Qw1Qw1Qw1Qw1A" // Sample Google Maps link
+                          href={event.mapEmbedUrl.replace('embed?', 'maps?')}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="btn btn-outline-primary mt-3"
                         >
                           View on Google Maps
                         </a>
-                      ) : (
-                        <button className="btn btn-outline-primary mt-3" disabled>
-                          See Location
-                        </button>
                       )}
                     </div>
                   </div>

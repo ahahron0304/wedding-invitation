@@ -11,19 +11,7 @@
     "show": true,
     "targetDate": "2025-07-08T16:00:00"
   },
-  "couple": {
-    "show": true,
-    "bride": {
-      "name": "Kring",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor vitae nisl. fringilla pellesque amet tempus."
-    },
-    "groom": {
-      "name": "Joel",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor vitae nisl. fringilla pellesque amet tempus."
-    }
-  },
+  "couple": null,
   "story": {
     "show": true,
     "title": "How it Happened",
@@ -54,24 +42,17 @@
     "events": [
       {
         "title": "The Ceremony",
-        "time": "1:00 PM – 2:30 PM",
+        "date": "Jul 8, 2025",
+        "time": "1:00 PM",
         "location": "Manila Cathedral, Cabildo St, Intramuros, Manila, Philippines",
-        "description": "Join us for our beautiful ceremony",
         "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.563964274331!2d120.9739633153547!3d14.59102798981337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1b2b1b2b2b%3A0x2b2b2b2b2b2b2b2b!2sManila%20Cathedral!5e0!3m2!1sen!2sph!4v1680000000000!5m2!1sen!2sph"
       },
       {
         "title": "The Reception",
-        "time": "3:00 PM – 6:00 PM",
+        "date": "Jul 8, 2025",
+        "time": "3:00 PM",
         "location": "The Blue Leaf Events Pavilion, Taguig, Metro Manila, Philippines",
-        "description": "Celebrate with us at the reception",
         "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.013456789012!2d121.0562453153547!3d14.53521798981337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a2b2b2b2b2%3A0x2b2b2b2b2b2b2b2b!2sThe%20Blue%20Leaf%20Events%20Pavilion!5e0!3m2!1sen!2sph!4v1680000000001!5m2!1sen!2sph"
-      },
-      {
-        "title": "The Party",
-        "time": "7:00 PM – 11:00 PM",
-        "location": "Valkyrie Nightclub, Uptown Bonifacio, Taguig, Metro Manila, Philippines",
-        "description": "Dance the night away with us",
-        "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.013456789012!2d121.0582453153547!3d14.53521798981337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9a2b2b2b2b2%3A0x3c3c3c3c3c3c3c3c!2sValkyrie%20Nightclub!5e0!3m2!1sen!2sph!4v1680000000002!5m2!1sen!2sph"
       }
     ]
   },
@@ -92,6 +73,27 @@
     "title": "RSVP",
     "subtitle": "We Will Be Very Happy if You Join Our Big Day. We are Waiting For You.",
     "qrCode": "https://forms.gle/yourformlink"
+  },
+  "weddingDetails": {
+    "show": true,
+    "items": [
+      {
+        "title": "Entourage",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. List of entourage members and roles goes here."
+      },
+      {
+        "title": "What to wear",
+        "content": "Dress code details and color motif. Example: Formal attire, pastel colors preferred."
+      },
+      {
+        "title": "What to do",
+        "content": "Instructions for guests, e.g., RSVP, arrive on time, parking info, etc."
+      },
+      {
+        "title": "What to gift",
+        "content": "Gift suggestions or registry info. Example: Your presence is our present, but if you wish to give, here are some ideas..."
+      }
+    ]
   },
   "footer": {
     "show": true,

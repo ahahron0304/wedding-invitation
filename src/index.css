@@ -563,3 +563,20 @@ body {
     font-size: 1.8rem;
   }
 }
+
+.wedding-details-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+.wedding-detail-card {
+  border: 2px solid #d4af37;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.wedding-detail-card:hover {
+  transform: translateY(-5px);
+}

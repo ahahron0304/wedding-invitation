@@ -8,14 +8,15 @@ const CountdownTimer = ({ config }) => {
     const timer = setInterval(() => {
       setTimeLeft(weddingDate - new Date());
     }, 1000);
-
     return () => clearInterval(timer);
   }, [weddingDate]);
 
-  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
-  const seconds = Math.floor((timeLeft / 1000) % 60);
+  // Clamp to zero if the date has passed
+  const clampedTime = Math.max(0, timeLeft);
+  const days = Math.floor(clampedTime / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((clampedTime / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((clampedTime / 1000 / 60) % 60);
+  const seconds = Math.floor((clampedTime / 1000) % 60);
 
   if (!config.countdown.show) return null;
 
@@ -27,7 +28,6 @@ const CountdownTimer = ({ config }) => {
             <div className="countdown-header mb-5">
               <h2 className="countdown-title">Countdown to Our Big Day</h2>
             </div>
-            
             <div className="row">
               <div className="col-lg-3 col-md-6 col-6 mb-4">
                 <div className="countdown-box">
