@@ -9,7 +9,7 @@ const Footer = ({ config }) => {
         <div className="row">
           <div className="col-lg-6 col-md-6 col-12 mb-4">
             <div className="footer-brand">
-              <h4>Kring & Joel</h4>
+              <h4>Noimi & Patrick</h4>
               <p>{config.footer.message}</p>
             </div>
           </div>
@@ -27,7 +27,7 @@ const Footer = ({ config }) => {
         </div>
         
         <div className="footer-bottom text-center mt-4">
-          <p>&copy; Copyright 2024 | Kring & Joel Wedding | All rights reserved.</p>
+          <p>&copy; Copyright 2024 | Noimi & Patrick Wedding | All rights reserved.</p>
         </div>
       </div>
     </footer>
