@@ -5,7 +5,6 @@ const RSVPSection = ({ config }) => {
     name: '',
     attending: 'Yes, I will be there',
     numberOfGuests: 1,
-    mealPreferences: '',
   });
 
   const handleChange = (e) => {
@@ -32,7 +31,6 @@ const RSVPSection = ({ config }) => {
               <h2 className="rsvp-title">{config.rsvp.title}</h2>
               <p className="rsvp-subtitle">{config.rsvp.subtitle}</p>
             </div>
-            
             <div className="row">
               <div className="col-lg-6 col-md-6 col-12 mb-4">
                 <div className="rsvp-form">
@@ -48,7 +46,6 @@ const RSVPSection = ({ config }) => {
                         required
                       />
                     </div>
-                    
                     <div className="form-group mb-3">
                       <div className="attendance-options">
                         <label className="attendance-option">
@@ -73,7 +70,6 @@ const RSVPSection = ({ config }) => {
                         </label>
                       </div>
                     </div>
-                    
                     <div className="form-group mb-3">
                       <select
                         name="numberOfGuests"
@@ -90,30 +86,12 @@ const RSVPSection = ({ config }) => {
                         <option value="5">05</option>
                       </select>
                     </div>
-                    
-                    <div className="form-group mb-4">
-                      <select
-                        name="mealPreferences"
-                        value={formData.mealPreferences}
-                        onChange={handleChange}
-                        className="form-control"
-                      >
-                        <option value="">Meal Preferences</option>
-                        <option value="Chicken Soup">Chicken Soup</option>
-                        <option value="Motton Kabab">Motton Kabab</option>
-                        <option value="Chicken BBQ">Chicken BBQ</option>
-                        <option value="Mix Salad">Mix Salad</option>
-                        <option value="Beef Ribs">Beef Ribs</option>
-                      </select>
-                    </div>
-                    
                     <button type="submit" className="btn btn-primary btn-lg w-100">
                       RSVP
                     </button>
                   </form>
                 </div>
               </div>
-              
               <div className="col-lg-6 col-md-6 col-12 mb-4">
                 <div className="rsvp-qr-section">
                   <h4>Scan QR Code</h4>

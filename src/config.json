@@ -3,13 +3,13 @@
     "show": true,
     "names": "Noimi & Patrick",
     "tagline": "We Are Getting Married",
-    "weddingDate": "Jul 8, 2025",
+    "weddingDate": "Dec 22, 2025",
     "time": "04:00 PM",
     "image": "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
   },
   "countdown": {
     "show": true,
-    "targetDate": "2025-07-08T16:00:00"
+    "targetDate": "2025-12-22T16:00:00"
   },
   "couple": null,
   "story": {
